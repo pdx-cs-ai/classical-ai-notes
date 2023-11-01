@@ -77,7 +77,7 @@
 * Perfect false negative rate: *pr(E|H) = 1*
 
         pr(H|E) = pr(H) pr(E|H) / pr(E)
-                = pr(H) / pr(E∧H ∨ E∧¬H)
+                = pr(H) / pr(E and H or E and ¬H)
                 = pr(H) / (pr(E|¬H) pr(¬H) + pr(E|H) pr(H))
                 = 1e-6 / (1e-4 × (1-1e-6) + 1e-6)
                 ~= 1e-6 / 1e-4 = 1e-2 = 0.01
@@ -102,7 +102,7 @@
 
     * causal/top-down: 
     
-             p(W|C) = p(W|S∨R)
+             p(W|C) = p(W|S or R)
                     = 1 - p(W|¬S) p(¬S|C) p(C) ×
                           p(W|¬R) p(¬R|C) p(C)
 

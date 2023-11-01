@@ -56,31 +56,4 @@
     * Tautology: does every assignment make the formula true?
       (NP-complete, extra variables) AKA theorem-proving
 
-## First-Order Logic: A Review
-
-* First-order Formula:
-
-    * "Predicates": Atoms that can take arguments (other
-      predicates, variables)
-
-    * "Variables": Value is predicate
-
-    * "Quantifiers": "exists" and "forall" "bind" variables
-
-* Things to do: Normalization (polytime), checking
-  (polytime), sat (undecidable), tautology (undecidable)
-
-## Quantified Propositional Logic
-
-* Quantified Propositional Formula ("QPROP"): First-order
-  logic, but all variables are bound and have a given set of
-  discrete values they could take on
-
-* Can turn (small) QPF into (large) PROP:
-
-  * forall → and, exists → or
-
-  * predicates are replaced by subscripted atoms
-
-* Compact notation for PROP, reduces mistakes
-
+* Tools: SAT solver, e.g. `picosat`

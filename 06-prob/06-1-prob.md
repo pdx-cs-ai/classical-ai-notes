@@ -66,15 +66,15 @@ reasoning
 
   * negation: *pr(¬p) = 1 - pr(p)*
 
-  * conjunction: *pr(p ∧ q) = pr(p) pr(q|p) = pr(q) pr(p|q)*
+  * conjunction: *pr(p and q) = pr(p) pr(q|p) = pr(q) pr(p|q)*
 
 ## Derived Probability Rules
 
-* disjunction: *pr(p ∨ q) = pr(¬(¬p ∧ ¬q)) = 1 - pr(¬p ∧ ¬q)*
+* disjunction: *pr(p or q) = pr(¬(¬p and ¬q)) = 1 - pr(¬p and ¬q)*
 
 * Bayes's Rule: 
 
-          pr(q) pr(p|q) = pr(p ∧ q) = pr(p) pr(q|p)
+          pr(q) pr(p|q) = pr(p and q) = pr(p) pr(q|p)
           pr(q) pr(p|q) = pr(q|p) pr(p)
           pr(p|q) = pr(q|p) pr(p) / pr(q)
 
@@ -90,14 +90,14 @@ reasoning
 
     * In this case, conjunction gets easier
 
-        * *pr(p ∧ q) = pr(p|q) pr(q) = pr(p) pr(q)*
+        * *pr(p and q) = pr(p|q) pr(q) = pr(p) pr(q)*
 
-* When *p* and *q* are strictly independent *pr(p ∧ q) = 0*
+* When *p* and *q* are strictly independent *pr(p and q) = 0*
 
     * In this case, disjunction gets easier
 
-            pr(p ∨ q)
-            = 1 - pr(¬p ∧ ¬q)
+            pr(p or q)
+            = 1 - pr(¬p and ¬q)
             = 1 - pr(¬p) pr(¬q)
             = 1 - (1 - pr(p))(1 - pr(q))
             = 1 - (1 - pr(p) - pr(q) - pr(p) pr(q))

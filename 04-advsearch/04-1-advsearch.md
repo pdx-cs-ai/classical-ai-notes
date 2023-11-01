@@ -1,6 +1,7 @@
 ## Adversary Search
 
-* So far, we have only fought the instance
+* So far, we have done single-agent search: our only
+  opponent is the instance itself
 
 * Consider a two-player game with:
 
@@ -41,6 +42,9 @@
 * Minimax Theorem (Von Neumann, Nash): Any state in the game
   has a well-defined *value* assuming "best play" by both
   sides
+  
+* Positions can be "reversed": change the color of all the
+  pieces and swap sides. Now negate the score.
 
 * Basic Negamax idea: 
 
