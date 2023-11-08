@@ -33,15 +33,15 @@
       (they aren't). Then we can just replace the
       conjunction with a product
 
-               pr(E1=v1|H) pr(E2=v2|H) ... pr(En=vn|H) pr(H)
-             = ---------------------------------------------
-                  pr(E1=v1) pr(E2=v2) ... pr(En=vn)
+                        pr(E1=v1|H) pr(E2=v2|H) ... pr(En=vn|H) pr(H)
+             pr*(H|E) = ---------------------------------------------
+                        pr(E1=v1) pr(E2=v2) ... pr(En=vn)
 
 * Sadly, the naive assumption means that the probabilities
   will be too low, since interactions won't be counted: but
   comparable for H true and false. So
 
-        H iff pr(H|E) > pr(not H|E)
+        H iff pr*(H|E) > pr*(not H|E)
 
 * Note that this comparison drops the denominator, which is nice
 
@@ -51,9 +51,9 @@
 
 * What we have so far:
 
-                            pr(E1=v1|H) ... pr(En=vn|H) pr(H)
-         pr(H|E1=v1, ...) = ---------------------------------
-                              pr(E1=v1) ... pr(En=vn)
+                             pr(E1=v1|H) ... pr(En=vn|H) pr(H)
+         pr*(H|E1=v1, ...) = ---------------------------------
+                               pr(E1=v1) ... pr(En=vn)
 
 
 * Consider the case where `pr(Ei=vi|H)=0`. If we try to
