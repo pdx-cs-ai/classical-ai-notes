@@ -1,14 +1,14 @@
-## ML Metatechniques
+## ML Metatechniques: Feature Selection
 
-* Before we plunge into more ML algorithms, worth talking
-  more about the stuff that is common across ML apps
+* Worth talking more about the stuff that is common across
+  ML apps
 
 * So far we've talked about
 
   * Controlling overfitting through dataset splits
   * Evaluating with limited data through cross-validation
 
-* There's worlds more: we'll hit just a few
+* There's worlds more: we'll look at feature selection today
 
 ## Feature Selection
 

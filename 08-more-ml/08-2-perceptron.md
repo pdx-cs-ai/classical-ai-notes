@@ -10,9 +10,10 @@
 
 * Maybe should start with a simplification by ignoring
 
+  * Graph structure, static and dynamic — just use fixed DAG
   * How the signalling works — just use analog levels
-  * How the neuron works — assume stateless simple combination
-  * That the brain is more than neurons — chemical and
+  * How the neuron works — assume adjustable simple combination
+  * That the brain is more than neurons, with chemical and
     biological elements
 
 ## Perceptron
@@ -27,7 +28,7 @@
 
         c = sum[i] w[i] x[i] + b > 0
 
-  (we will use unit weights and features: `x[i], w[i] in [0..1]`
+  (we will use unitish weights and features: `x[i], w[i] in [-1..1]`
 
 ## Training A Perceptron
 
